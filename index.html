@@ -12,21 +12,25 @@
 
       .page-layout {
         display: grid;
-        grid-template: 1fr 10fr 1fr / 1fr;
+        grid-template: 1fr 10fr / 2fr 10fr;
         gap: 1rem;
       }
 
       .page-nav {
         background: hotpink;
+        grid-column: 2;
       }
 
       .page-content {
         background: papayawhip;
-        overflow-y: scroll;
+        grid-column: 2;
+        padding: 0 1rem;
       }
 
-      .page-footer {
+      .page-left-menu {
         background: slategrey;
+        grid-column: 1;
+        grid-row: 1 / span 2;
       }
 
       .placeholder-text {
@@ -55,7 +59,7 @@
           officia veniam? Quo, veniam. Aut, aliquam!
         </p>
       </main>
-      <footer class="page-footer placeholder-text">Footer</footer>
+      <footer class="page-left-menu placeholder-text">Left Menu</footer>
     </div>
   </body>
 </html>
