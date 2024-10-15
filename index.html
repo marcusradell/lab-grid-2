@@ -5,11 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lab-grid-2</title>
     <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
       .page-layout {
+        display: grid;
+        grid-template: 1fr 10fr 1fr / 1fr;
+        height: 100vh;
+      }
+
+      .page-nav {
+        background: hotpink;
+      }
+
+      .page-content {
+        background: papayawhip;
+        overflow-y: scroll;
+      }
+
+      .page-footer {
+        background: slategrey;
+      }
+
+      .placeholder-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        text-transform: uppercase;
       }
     </style>
   </head>
   <body>
-    <main class="page-layout"></main>
+    <div class="page-layout">
+      <header class="page-nav placeholder-text">Header</header>
+      <main class="page-content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+          quibusdam animi, voluptas repellat assumenda eaque consequatur dolorem
+          eos cupiditate inventore maxime obcaecati voluptate debitis ullam odio
+          placeat, accusantium similique sint?
+        </p>
+        <p>
+          Eveniet facilis molestiae eligendi alias exercitationem! Voluptas
+          voluptate quo ipsa architecto corporis, labore adipisci molestiae quis
+          magnam voluptatibus, aspernatur distinctio natus esse illum quisquam
+          officia veniam? Quo, veniam. Aut, aliquam!
+        </p>
+      </main>
+      <footer class="page-footer placeholder-text">Footer</footer>
+    </div>
   </body>
 </html>
